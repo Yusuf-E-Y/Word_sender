@@ -23,7 +23,8 @@ Install dependencies with:
 
 ```bash
 pip install requests beautifulsoup4
-
 ````
+smtplib
+````bash
 pip install smtplib
 ````
