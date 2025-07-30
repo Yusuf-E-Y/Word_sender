@@ -5,11 +5,14 @@ import random
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
+import os
 
 def send_mail():
-    sender_email = "" # <-- Enter your email here
-    receiver_email = ""
-    password = "" # <-- Enter your application password here
+    load_dotenv(dotenv_path="word.env")  
+    sender_email = os.getenv("MAİL")
+    receiver_email = os.getenv("MAİL")
+    password = os.getenv("APP") 
 
     subject = "Today words"
 
