@@ -12,13 +12,13 @@ def send_mail():
     load_dotenv(dotenv_path="word.env")  
     sender_email = os.getenv("MAİL")
     receiver_email = os.getenv("MAİL")
-    password = os.getenv("APP") 
+    password = os.getenv("APP") #<-- for securty with env files
 
     subject = "Today words"
 
-    column1 = []
-    column2 = []
-    column3 = []
+    column1 = list()
+    column2 = list()
+    column3 = list()
 
     url = "https://www.englishcentral.com/blog/adan-zye-en-cok-kullanilan-ingilizce-kelimeler-ve-anlamlari/" # <-- URL of the website to scrape
 
