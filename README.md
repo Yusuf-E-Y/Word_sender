@@ -18,6 +18,7 @@ The data is scraped from a website and processed using the following Python libr
 - Python 3.x
 - `requests`
 - `beautifulsoup4`
+- `smtplib`
 
 Install dependencies with:
 
