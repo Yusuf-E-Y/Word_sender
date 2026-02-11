@@ -65,4 +65,4 @@ def send_mail():
 
 while True:
     send_mail()
-    time.sleep(3600)
+    time.sleep(3600) # <-- per hour sends email
